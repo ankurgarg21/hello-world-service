@@ -9,4 +9,7 @@
        refspec: '+refs/pull/*:refs/heads/*'
 
     - name: deploy service hello-world 
-      command: chdir=/opt/hello-world/ mvn package && mvn spring-boot:run
+      command: chdir=/opt/hello-world/ {{ item }}
+      with_items:
+       - mvn package
+       - mvn spring-boot:run
