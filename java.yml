@@ -1,0 +1,15 @@
+---
+- hosts: local
+  tasks:
+    - name: installing repo for Java 7 in Ubuntu
+      apt_repository: repo='ppa:openjdk-r/ppa'
+
+- hosts: local
+  become: true
+  roles:
+    - role: java
+      when: "ansible_os_family == 'Debian'"
+      java_packages:
+        - openjdk-8-jdk
+
+
