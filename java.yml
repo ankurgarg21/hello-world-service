@@ -1,5 +1,6 @@
 ---
 - hosts: local
+  become: true
   tasks:
     - name: installing repo for Java 7 in Ubuntu
       apt_repository: repo='ppa:openjdk-r/ppa'
