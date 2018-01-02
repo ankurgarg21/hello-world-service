@@ -1,3 +1,4 @@
----
-# tasks file for apache-maven
-- include: install-maven.yml
+- name: Install the package "maven"
+  apt:
+    name: maven
+    state: present
