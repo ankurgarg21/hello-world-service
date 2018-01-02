@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/xenial64"
   config.vm.network :forwarded_port, host: 8080, guest: 8080
-  config.vm.network :forwarded_port, host: 8081, guest: 8081
+  config.vm.network :forwarded_port, host: 8082, guest: 8082
   
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yml"
