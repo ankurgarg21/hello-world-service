@@ -39,6 +39,24 @@ $ ansible-playbook -i hosts -v deploy.yml
 App will listen on port localhost:8080
 
 
+# Automate Jenkins Jobs
+
+To automate jenkins jobs using Jenkins Job Builder
+
+## Jenkins jobs
+Create a jenkins job ini-file
+
+```
+[jenkins]
+url=http://localhost:8082/
+user=youruser
+password=password
+```
+
+# Command to build jenkins jobs
+
+$ jenkins-jobs --conf ankur.ini update jenkins-job/
+
 
 
 
