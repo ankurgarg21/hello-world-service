@@ -20,4 +20,4 @@
           permit-all: true
     builders:
       - shell: |
-         ansible-playbook -i hosts -v deploy.yml 
+         ansible-playbook -i hosts -v deploy.yml -u ubuntu
