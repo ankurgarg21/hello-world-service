@@ -17,8 +17,8 @@ Vagrantfile includes config to bulid spring boot app stack with following packag
 - Jenkins 
 
 # Commands
-$ vagrant up
-$ vagrant provision
+- vagrant up
+- vagrant provision
 
 Make sure ansible is installed on your host
 
@@ -35,6 +35,7 @@ Jenkins will listen on port localhost:8082
 # include config to deploy spring boot app
 $ ansible-playbook -i hosts -v deploy.yml
 
+# App Path: /opt/hello-world/
 App will listen on port localhost:8080
 
 
