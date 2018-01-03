@@ -77,6 +77,7 @@ $ jenkins-jobs --conf ankur.ini update jenkins-job/
 All current settings has been confgured to test only on localhost using below tools and technologies
 App is currently not configured to run as a background service 
 
+- ubuntu/xenial64
 - Java
 - Maven
 - Jenkins
