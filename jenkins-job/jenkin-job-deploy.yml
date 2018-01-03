@@ -1,0 +1,23 @@
+- job:
+    name: deploy_app
+    properties:
+      - github:
+          url: https://github.com/ankurgarg21/hello-world-service
+    wrappers:
+      - ansicolor
+      - timestamps
+      - inject-passwords:
+          global: true
+    scm:
+      - git:
+          url: https://github.com/ankurgarg21/hello-world-service.git
+          branches:
+          - origin/master
+
+    triggers:
+      - github-pull-request:
+          github-hooks: true
+          permit-all: true
+    builders:
+      - shell: |
+         ansible-playbook -i hosts -v deploy.yml 
