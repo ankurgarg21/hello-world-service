@@ -1,8 +1,8 @@
 - job:
-    name: test-spring-app
+    name: testing
     properties:
       - github:
-          url: https://github.com/ankurgarg21/hello-world-service.git
+          url: https://github.com/ankurgarg21/hello-world-service
     wrappers:
       - ansicolor
       - timestamps
