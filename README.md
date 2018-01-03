@@ -83,8 +83,8 @@ App is currently not configured to run as a background service
 - Jenkins
 - Ansible
 - Vagrant 
-- Jenkis Job Builder
-- Githib
+- Jenkins Job Builder
+- Github
 
 # Version Deploy App
 - Can use tag based release in stage envoirnment to deploy with latest tag only
