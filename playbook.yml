@@ -1,4 +1,3 @@
 - include: java.yml
 - include: maven.yml
 - include: jenkins.yml
-- include: deploy.yml
